@@ -1,5 +1,7 @@
 # Ôn thi Lý thuyết Cơ sở dữ liệu
 
+**Link web trực tuyến:** https://minhchiii.github.io/csdl-on-thi/
+
 Trang web ôn tập tương tác học phần **Lý thuyết Cơ sở dữ liệu** (chạy tĩnh hoàn toàn, hỗ trợ offline và GitHub Pages):
 
 - **Tóm tắt & Công thức**: 4 chương từ slide bài giảng, sơ đồ ER/EER chuẩn Chen (SVG), bảng quy tắc và Ma trận đề 2023.
