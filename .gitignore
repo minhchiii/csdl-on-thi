@@ -1,0 +1,11 @@
+# Tài liệu gốc và bộ nhớ đệm công cụ (không cần khi chạy web)
+tai-lieu/
+tai-lieu-text/
+tools/npm/
+tools/out/
+tools/er-test.html
+
+# Hệ điều hành / trình soạn thảo
+.DS_Store
+Thumbs.db
+*.log

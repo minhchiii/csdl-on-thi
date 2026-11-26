@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ôn thi Lý thuyết CSDL</title>
+<script>
+  // đặt theme sớm để không bị nháy màu
+  (function () { try { var s = JSON.parse(localStorage.getItem('csdl-ontap-v1') || '{}');
+    var t = s.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
+</script>
+<link rel="stylesheet" href="vendor/fonts/fonts.css">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/views.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#tom-tat">
+      <span class="brand-mark">CSDL</span>
+      <span class="brand-text">Ôn thi Lý thuyết CSDL</span>
+    </a>
+    <nav class="tabs" id="tabs" aria-label="Các phần">
+      <a href="#tom-tat" data-tab="tom-tat">Tóm tắt</a>
+      <a href="#flashcard" data-tab="flashcard">Flashcard</a>
+      <a href="#trac-nghiem" data-tab="trac-nghiem">Trắc nghiệm</a>
+      <a href="#tu-luan" data-tab="tu-luan">Tự luận</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="btn-data" title="Nhập / xuất dữ liệu" aria-label="Nhập / xuất dữ liệu"></button>
+      <button class="icon-btn" id="btn-theme" title="Đổi giao diện sáng / tối" aria-label="Đổi giao diện sáng / tối"></button>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="app" tabindex="-1"></main>
+
+<button class="fab" id="btn-cheat" title="Bảng ký hiệu ER/EER và đại số quan hệ">
+  <span class="fab-ic"></span><span>Cheat sheet</span>
+</button>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head">
+      <h2 id="modal-title"></h2>
+      <button class="icon-btn" data-close aria-label="Đóng"></button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- thư viện -->
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/auto-render.min.js"></script>
+<script src="assets/js/icons.js"></script>
+
+<!-- dữ liệu: mỗi chương / mỗi đề một file -->
+<script src="data/meta.js"></script>
+<script src="data/ch1.js"></script>
+<script src="data/ch2.js"></script>
+<script src="data/ch3.js"></script>
+<script src="data/ch4-tongquan.js"></script>
+<script src="data/ch4-pth.js"></script>
+<script src="data/ch4-chuanhoa.js"></script>
+<script src="data/de-mau-720.js"></script>
+<script src="data/de-2021-1.js"></script>
+<script src="data/de-2021-2.js"></script>
+<script src="data/de-k16-ca1.js"></script>
+<script src="data/de-k16-ca2.js"></script>
+<script src="data/de-giuaki-1.js"></script>
+<script src="data/de-k17-ca1.js"></script>
+<script src="data/de-k17-ca2.js"></script>
+<script src="data/de-giuaki-a.js"></script>
+<script src="data/de-ltcsdl-de1.js"></script>
+<script src="data/de-ltcsdl-de2.js"></script>
+<script src="data/de-ltcsdl-de3.js"></script>
+<script src="data/bt-ch2.js"></script>
+<script src="data/tuluan-er.js"></script>
+<script src="data/tuluan-dsqh.js"></script>
+<script src="data/tuluan-ch4.js"></script>
+
+<!-- ứng dụng -->
+<script src="assets/js/schema.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/er-svg.js"></script>
+<script src="assets/js/summary.js"></script>
+<script src="assets/js/flashcards.js"></script>
+<script src="assets/js/quiz-core.js"></script>
+<script src="assets/js/quiz-view.js"></script>
+<script src="assets/js/essays.js"></script>
+<script src="assets/js/cheatsheet.js"></script>
+<script src="assets/js/io.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
